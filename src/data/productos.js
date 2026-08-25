@@ -5,15 +5,15 @@ export const PRODUCTOS = [
     categoria: 'areneros',
     precio: 45990,
     descripcion: 'Arenero grande con borde elevado. Fácil de limpiar, resistente.',
-    imagen: '🏠',
+    imagen: 'https://images.unsplash.com/photo-1535551783405-aace86d8be9e?w=400&h=400&fit=crop',
   },
   {
     id: 2,
-    nombre: 'Arenero Cerrado Automático',
+    nombre: 'MoonLitterBox - Arenero Automático',
     categoria: 'areneros',
-    precio: 89990,
-    descripcion: 'Arenero con tapa y sistema automático de limpieza. Ultra higiénico.',
-    imagen: '🤖',
+    precio: 299990,
+    descripcion: 'Sistema automático revolucionario. Limpia en 5 segundos sin electricidad.',
+    imagen: 'https://ksr.imgix.net/assets/040/783/228/e3b2e3f9a9e8f7e6d5c4b3a2.jpg?w=400&h=400&fit=crop',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const PRODUCTOS = [
     categoria: 'arena',
     precio: 24990,
     descripcion: 'Arena de bentonita aglomerante. Excelente absorción y olor.',
-    imagen: '🏜️',
+    imagen: 'https://images.unsplash.com/photo-1611003228941-98852ba62227?w=400&h=400&fit=crop',
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const PRODUCTOS = [
     categoria: 'arena',
     precio: 19990,
     descripcion: 'Arena biodegradable y ecológica. Segura para gatos.',
-    imagen: '🌿',
+    imagen: 'https://images.unsplash.com/photo-1615751072497-5f5169febe17?w=400&h=400&fit=crop',
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const PRODUCTOS = [
     categoria: 'comida',
     precio: 34990,
     descripcion: 'Alimento balanceado premium. Proteínas de calidad, nutrientes completos.',
-    imagen: '🍖',
+    imagen: 'https://images.unsplash.com/photo-1568152950566-c1bf36e3a36f?w=400&h=400&fit=crop',
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const PRODUCTOS = [
     categoria: 'comida',
     precio: 39990,
     descripcion: 'Especial para gatitos en crecimiento. Fórmula nutritiva reforzada.',
-    imagen: '👶',
+    imagen: 'https://images.unsplash.com/photo-1585110396000-c9ffd4d4b3f4?w=400&h=400&fit=crop',
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ export const PRODUCTOS = [
     categoria: 'comida',
     precio: 29990,
     descripcion: 'Para gatos mayores. Fácil digestión, cuidado articular.',
-    imagen: '🧓',
+    imagen: 'https://images.unsplash.com/photo-1535551783405-aace86d8be9e?w=400&h=400&fit=crop',
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ export const PRODUCTOS = [
     categoria: 'paquetes',
     precio: 129990,
     descripcion: 'Arenero + 10kg arena + comida. Todo lo que necesita un gato nuevo.',
-    imagen: '📦',
+    imagen: 'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop',
   },
 ]
 
