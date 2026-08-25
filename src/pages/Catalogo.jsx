@@ -16,30 +16,52 @@ export default function Catalogo() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-16 sm:py-20">
-          <div className="space-y-2">
-            <h1 className="text-5xl sm:text-6xl font-light text-gray-900 tracking-tight">Tienda Gatos</h1>
-            <p className="text-gray-500 text-lg font-light">Productos premium para tu felino</p>
+      {/* Hero Section */}
+      <section className="max-w-7xl mx-auto px-6 py-24 sm:py-32 text-center">
+        <div className="space-y-6 max-w-2xl mx-auto">
+          <p className="text-xs sm:text-sm tracking-widest uppercase text-gray-500 font-light">Colección Premium</p>
+          <h1 className="text-6xl sm:text-7xl font-light text-gray-900 tracking-tight">Tienda Gatos</h1>
+          <p className="text-base sm:text-lg text-gray-600 font-light leading-relaxed">
+            Productos premium para el bienestar total de tu felino. Desde areneros innovadores hasta comida balanceada de calidad superior.
+          </p>
+          <div className="flex gap-4 justify-center pt-4">
+            <button className="px-8 py-3 bg-gray-900 text-white text-sm font-light tracking-wider hover:bg-gray-800 transition">
+              EXPLORAR
+            </button>
+            <button className="px-8 py-3 border border-gray-900 text-gray-900 text-sm font-light tracking-wider hover:bg-gray-900 hover:text-white transition">
+              MÁS INFO
+            </button>
           </div>
         </div>
-      </header>
+      </section>
 
+      {/* Divider */}
+      <div className="max-w-7xl mx-auto px-6 py-8">
+        <div className="h-px bg-gray-200"></div>
+      </div>
+
+      {/* Catalog Section */}
       <main className="max-w-7xl mx-auto px-6 py-16">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <p className="text-xs tracking-widest uppercase text-gray-500 font-light mb-3">Catálogo</p>
+          <h2 className="text-4xl sm:text-5xl font-light text-gray-900 tracking-tight mb-4">Todos los Productos</h2>
+          <p className="text-gray-600 text-sm font-light">Explora nuestra colección completa de artículos premium para gatos</p>
+        </div>
+
         {/* Filtros */}
-        <div className="mb-16 flex gap-4 flex-wrap">
+        <div className="mb-16 flex gap-3 flex-wrap justify-center">
           {CATEGORIAS.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setCategoria(cat.id)}
-              className={`px-1 py-2 text-sm font-light tracking-wide border-b-2 transition ${
+              className={`px-4 py-2 text-xs font-light tracking-wider uppercase transition ${
                 categoria === cat.id
-                  ? 'border-gray-900 text-gray-900'
-                  : 'border-transparent text-gray-500 hover:text-gray-900'
+                  ? 'bg-gray-900 text-white'
+                  : 'border border-gray-300 text-gray-600 hover:border-gray-900 hover:text-gray-900'
               }`}
             >
-              {cat.label}
+              {cat.label.split(' ')[0]}
             </button>
           ))}
         </div>
@@ -57,15 +79,15 @@ export default function Catalogo() {
 
         {productos.length === 0 && (
           <div className="text-center py-20 text-gray-400">
-            <p className="text-sm tracking-wide">Sin productos en esta categoría</p>
+            <p className="text-sm tracking-wide font-light">Sin productos en esta categoría</p>
           </div>
         )}
       </main>
 
       {/* Footer */}
       <footer className="border-t border-gray-200 mt-20">
-        <div className="max-w-7xl mx-auto px-6 py-12 text-center text-gray-500 text-sm font-light">
-          <p>© 2026 Tienda Gatos. Todos los derechos reservados.</p>
+        <div className="max-w-7xl mx-auto px-6 py-12 text-center text-gray-500 text-xs font-light tracking-wide">
+          <p>© 2026 TIENDA GATOS. TODOS LOS DERECHOS RESERVADOS.</p>
         </div>
       </footer>
 
